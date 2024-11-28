@@ -1,0 +1,9 @@
+services:
+  database:
+    container_name: postgres-datmsc3
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    volumes:
+      - C:\Users\jonat\OneDrive - Pan-Atlantic University\DAT 620 - Blockchain,Web and Mobile Technologies\Code:/data/postgres
+    env_file: datmsc3.env
